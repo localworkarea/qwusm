@@ -24,7 +24,7 @@
 			z-index: 7;
 		}
 		img {
-			@include adaptiveValue("height", 88, 70);
+			@include adaptiveValue("height", 50, 40);
 			
 		}
 	}

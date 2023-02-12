@@ -246,3 +246,105 @@
   &__btn {
   }
 }
+
+//==== CHOICE ========================================================
+.choice {
+  @include adaptiveValue("padding-top", 70, 50);
+  @include adaptiveValue("padding-bottom", 70, 50);
+  // .choice__container
+  &__container {
+  }
+  // .choice__title
+  &__title {
+    text-align: center;
+    &:not(:last-child) {
+      margin-bottom: rem(25);
+    }
+  }
+  // .choice__text
+  &__text {
+    text-align: center;
+  }
+  // .choice__cards
+  &__cards {
+    margin-top: rem(50);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(30);
+    @media (max-width:$tablet){
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width:$mobile){
+      grid-template-columns: 1fr;
+    }
+  }
+}
+.card-choice {
+  max-width: rem(400);
+  border-radius: rem(10);
+  overflow: hidden;
+  @media (max-width:$tablet){
+    max-width: rem(500);
+  }
+  @media (max-width:$mobile){
+     max-width: 100%; 
+  }
+  // .card-choice__image-ibg
+  &__image-ibg {
+    padding-bottom: 86%;
+  }
+  // .card-choice__content
+  &__content {
+    padding: rem(20) rem(10) rem(10);
+    background-color: #f5f5f5;
+  }
+  // .card-choice__title
+  &__title {
+    @include adaptiveValue("font-size", 20, 18);
+    font-weight: 600;
+    &:not(:last-child) {
+      margin-bottom: rem(25);
+    }
+  }
+  // .card-choice__list
+  &__list {
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 40, 20);
+    }
+  }
+  // .card-choice__li
+  &__li {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    width: 100%;
+    &:not(:last-child) {
+      margin-bottom: rem(15);
+    }
+  }
+  // .card-choice__name
+  &__name {
+  }
+  // .card-choice__dot
+  &__dot {
+    border-bottom: rem(1) dotted $mainColor;
+    margin: rem(0) rem(5) rem(5);
+  }
+  // .card-choice__info
+  &__info {
+  }
+  // .card-choice__buttons
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: rem(10);
+    @media (max-width:$mobileSmall){
+       flex-direction: column; 
+    }
+  }
+  // .card-choice__btn
+  &__btn {
+    width: 100%;
+    font-size: rem(13);
+    padding: rem(10);
+  }
+}

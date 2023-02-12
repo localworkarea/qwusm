@@ -9,6 +9,7 @@
   padding: rem(10) rem(20);
   transition: all .3s ease-out;
   height: rem(44);
+  cursor: pointer;
   img {
     filter: invert(97%) sepia(0%) saturate(0%) hue-rotate(138deg) brightness(105%) contrast(105%);
     width: rem(24);
@@ -23,7 +24,19 @@
       background-color: $gray;
     }
   }
-  
+}
+.btn-black {
+  background-color: white;
+  color: inherit;
+  border: rem(2) solid $mainColor;
+  font-weight: 700;
+  transition: all .3s ease-out;
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: $mainColor;
+      color: white;
+    }
+  }
 }
 .title {
   @include adaptiveValue("font-size", 48, 28);
