@@ -191,13 +191,10 @@
 }
 .swiper-button-next:after,
 .swiper-button-prev:after {
-	font-family: swiper-icons;
-	font-size: var(--swiper-navigation-size);
-	text-transform: none !important;
-	letter-spacing: 0;
-	text-transform: none;
-	font-variant: initial;
-	line-height: 1;
+	width: rem(32);
+	height: rem(32);
+	background-color: white;
+	border-radius: 50%;
 }
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
@@ -206,7 +203,7 @@
 }
 .swiper-button-prev:after,
 .swiper-rtl .swiper-button-next:after {
-	content: "prev";
+	// content: "";
 }
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
@@ -215,7 +212,7 @@
 }
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
-	content: "next";
+	// content: "";
 }
 .swiper-button-lock {
 	display: none;

@@ -6,6 +6,8 @@
 	top: 0;
 	left: 0;
 	width: 100%;
+	@include adaptiveValue("padding-top", 23, 5);
+	@include adaptiveValue("padding-bottom", 23, 5);
 	&._header-scroll {
 		box-shadow: 0 0 6px #8f8f8f;
 	}
@@ -15,7 +17,6 @@
 		align-items: center;
 		column-gap: rem(10);
     justify-content: space-between;
-		padding: rem(23) rem(15);
 	}
 	// .header__logo
 	&__logo {
@@ -97,8 +98,8 @@
 	@media (max-width: $tablet) {
 		display: block;
 		position: relative;
-		width: rem(30);
-		height: rem(18);
+		width: rem(24);
+		height: rem(16);
 		z-index: 7;
 		@media (any-hover: none) {
 			cursor: default;

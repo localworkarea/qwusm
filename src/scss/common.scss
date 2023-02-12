@@ -1,13 +1,19 @@
 // Заголовки, загальні БЕМ блоки та інше...
 .btn {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: rem(10);
   font-size: rem(15);
   border-radius: rem(25);
   padding: rem(10) rem(20);
   transition: all .3s ease-out;
+  height: rem(44);
+  img {
+    filter: invert(97%) sepia(0%) saturate(0%) hue-rotate(138deg) brightness(105%) contrast(105%);
+    width: rem(24);
+    height: rem(24)
+  }
 }
 .btn-orange {
   background-color: $orange;
@@ -16,5 +22,81 @@
     &:hover {
       background-color: $gray;
     }
+  }
+  
+}
+.title {
+  @include adaptiveValue("font-size", 48, 28);
+  font-weight: 800;
+  line-height: 1.25;
+  font-family: "Roboto", sans-serif;
+}
+
+.purpose__buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 rem(15);
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  width: rem(32);
+  height: rem(32);
+  background-color: rgba(255, 255, 255, 0.9);
+	border-radius: 50%;
+  position: relative;
+  &::before,
+  &::after {
+    content:'';
+    width: rem(12);
+    height: rem(2);
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    border-radius: rem(1);
+  }
+}
+.swiper-button-prev {
+  &::before {
+    transform: rotate(-45deg);
+    top: rem(11);
+    left: rem(9);
+  }
+  &::after {
+    transform: rotate(45deg);
+    bottom: rem(11);
+    left: rem(9);
+  }
+}
+
+.swiper-button-next {
+  &::before {
+    transform: rotate(-45deg);
+    bottom: rem(11);
+    right: rem(9);
+  }
+  &::after {
+    transform: rotate(45deg);
+    top: rem(11);
+    right: rem(9);
+  }
+}
+
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: rem(-30);
+  gap: rem(30);
+}
+.swiper-pagination-bullet {
+  width: rem(10);
+  height: rem(10);
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: all .3s ease;
+  &.swiper-pagination-bullet-active {
+    background-color: rgba(255, 255, 255, 1);
   }
 }
