@@ -1,150 +1,526 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Верстка «NEW_PROJECT_NAME»</title>
-	</head>
+<html lang="uk">
+	@@include('html/_head.htm',{
+	"title":"Consturcion Company Website"
+	})
 	<body>
-		<div class="rootpage">
-			<h1>Верстка «NEW_PROJECT_NAME»</h1>
-			<div class="rootpage__info">
-				Опис проєкту
-			</div>
-			<h2>Готові сторінки:</h2>
-			<ol class="rootpage__list">
-				<li><a target="_blank" href="home.html">Головна</a></li>
-			</ol>
-			<h2>Попапи:</h2>
-			<ol class="rootpage__list">
-				<li><a target="_blank" href="home.html#"></a></li>
-			</ol>
-			<div class="rootpage__tnx">
-				<h2>Дякую за замовлення!</h2>
-				<p>Буду радий (да) гарному відгуку.</p>
-				<p>Звертайтесь ще!</p>
-			</div>
-			<div class="rootpage__contacts">
-				<h2>Мої контакти:</h2>
-				<p>Пошта: <a href="mailto:email@gmail.com">email@gmail.com</a></p>
-				<p>Телефон: <a href="tel:8800800800">8 800 800 800</a></p>
-				<p>Соц. мережі: <a href="">посилання</a></p>
-			</div>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="main">
+					<div class="main__container">
+						<div class="main__info info-main">
+							<h1 class="info-main__title">Оренда спецтехніки <span>від 2 годин</span> у Кривому Розі з доставкою до об'єкту</h1>
+							<ul class="info-main__items">
+								<li class="info-main__list">
+									<div class="info-main__image-ibg">
+										<img src="@img/icon/check.svg" alt="check">
+									</div>
+									<div class="info-main__text">Великий автопарк техніки</div>
+								</li>
+								<li class="info-main__list">
+									<div class="info-main__image-ibg">
+										<img src="@img/icon/check.svg" alt="check">
+									</div>
+									<div class="info-main__text">Доставимо протягом 2 годин після заявки</div>
+								</li>
+								<li class="info-main__list">
+									<div class="info-main__image-ibg">
+										<img src="@img/icon/check.svg" alt="check">
+									</div>
+									<div class="info-main__text">Замовлення всього від 2 годин</div>
+								</li>
+							</ul>
+							<div class="info-main__buttons">
+								<a href="#" data-goto-top="78" data-goto=".choice" class="info-main__btn btn btn-orange">Каталог техніки</a>
+								<a href="#" data-goto-top="78" data-goto=".order" class="info-main__btn btn btn-orange-white">
+									Залишити заявку	
+								</a>
+							</div>
+						</div>
+						<div class="main__image-ibg">
+							<img src="@img/1-1.png" alt="tech">
+						</div>
+					</div>
+				</section>
+				<section class="benefit">
+					<div class="benefit__container">
+						<h2 class="benefit__title title">Чому ми?</h2>
+						<div class="benefit__content">
+							<div class="benefit__item">
+								<div class="benefit__image">
+									<img src="@img/icon/customer-service.svg" alt="image">
+								</div>
+								<div class="benefit__text">Персональный менеджер 24/7</div>
+							</div>
+							<div class="benefit__item">
+								<div class="benefit__image">
+									<img src="@img/icon/calendar.svg" alt="image">
+								</div>
+								<div class="benefit__text">Без націнок у вихідні та свята</div>
+							</div>
+							<div class="benefit__item">
+								<div class="benefit__image">
+									<img src="@img/icon/phone.svg" alt="image">
+								</div>
+								<div class="benefit__text">Допомога для точного підбору техніки</div>
+							</div>
+							<div class="benefit__item">
+								<div class="benefit__image">
+									<img src="@img/icon/satisfaction.svg" alt="image">
+								</div>
+								<div class="benefit__text">Спецтехніка провідних марок</div>
+							</div>
+							<div class="benefit__item">
+								<div class="benefit__image">
+									<img src="@img/icon/management.svg" alt="image">
+								</div>
+								<div class="benefit__text">Спецтехніка завжди справна та заправлена</div>
+							</div>
+							<div class="benefit__item">
+								<div class="benefit__image">
+									<img src="@img/icon/clock.svg" alt="image">
+								</div>
+								<div class="benefit__text">Подання спецтехніки у день звернення</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="purpose">
+					<div class="purpose__container">
+						<div class="purpose__info info-purpose">
+							<h2 class="info-purpose__title title">Техніка для всього!</h2>
+							<div class="info-purpose__text">Арендуйте спецтехніку для будь-яких робіт і на будь-який термін. Гарантуємо вчасну доставку і чесні умови. Проконсультуємо щодо ефективного використання наших машин щодо ваших потреб і чіткого виконання плану робіт.</div>
+							<ul class="info-purpose__items">
+								<li class="info-purpose__list">
+									<div class="info-purpose__image">
+										<img src="@img/icon/check.svg" alt="check">
+									</div>
+									<div class="info-purpose__text">Перевезення та переміщення</div>
+								</li>
+								<li class="info-purpose__list">
+									<div class="info-purpose__image">
+										<img src="@img/icon/check.svg" alt="check">
+									</div>
+									<div class="info-purpose__text">Монтаж</div>
+								</li>
+								<li class="info-purpose__list">
+									<div class="info-purpose__image">
+										<img src="@img/icon/check.svg" alt="check">
+									</div>
+									<div class="info-purpose__text">Демонтаж</div>
+								</li>
+								<li class="info-purpose__list">
+									<div class="info-purpose__image">
+										<img src="@img/icon/check.svg" alt="check">
+									</div>
+									<div class="info-purpose__text">Технічні роботи</div>
+								</li>
+								<li class="info-purpose__list">
+									<div class="info-purpose__image">
+										<img src="@img/icon/check.svg" alt="check">
+									</div>
+									<div class="info-purpose__text">Буріння</div>
+								</li>
+								<li class="info-purpose__list">
+									<div class="info-purpose__image">
+										<img src="@img/icon/check.svg" alt="check">
+									</div>
+									<div class="info-purpose__text">Будівництво</div>
+								</li>
+								<li class="info-purpose__list">
+									<div class="info-purpose__image">
+										<img src="@img/icon/check.svg" alt="check">
+									</div>
+									<div class="info-purpose__text">Вивіз сміття</div>
+								</li>
+								<li class="info-purpose__list">
+									<div class="info-purpose__image">
+										<img src="@img/icon/check.svg" alt="check">
+									</div>
+									<div class="info-purpose__text">Свердління скважин</div>
+								</li>
+							</ul>
+						</div>
+						<div class="purpose__slider-block">
+							<div class="purpose__slider swiper">
+								<div data-gallery class="purpose__wrapper swiper-wrapper">
+									<a href="@img/slider/thech (2).jpg" class="purpose__slide swiper-slide">
+										<div class="purpose__slide-img-ibg">
+											<img src="@img/slider/thech (2).jpg" alt="Гідромолот">
+										</div>
+									</a>
+									<a href="@img/slider/thech (3).jpg" class="purpose__slide swiper-slide">
+										<div class="purpose__slide-img-ibg">
+											<img src="@img/slider/thech (3).jpg" alt="Міні екскаватор">
+										</div>
+									</a>
+									<a href="@img/slider/thech (1).jpg" class="purpose__slide swiper-slide">
+										<div class="purpose__slide-img-ibg">
+											<img src="@img/slider/thech (1).jpg" alt="Міні навантажувач">
+										</div>
+									</a>
+									<a href="@img/slider/thech (4).jpg" class="purpose__slide swiper-slide">
+										<div class="purpose__slide-img-ibg">
+											<img src="@img/slider/thech (4).jpg" alt="Міні навантажувач">
+										</div>
+									</a>
+								</div>
+								<div class="purpose__buttons">
+									<button type="button" class="swiper-button-prev"></button>
+									<button type="button" class="swiper-button-next"></button>
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</section>
+				<section class="choice">
+					<div class="choice__container">
+						<h2 class="choice__title title">Наш автопарк</h2>
+						<div class="choice__text">Замовити можна як від 3 годин, так і на необхідний термін</div>
+						<div class="choice__cards">
+							<article class="card-choice">
+								<div class="card-choice__image-ibg">
+									<img src="@img/card/1.jpg" alt="image">
+								</div>
+								<div class="card-choice__content">
+									<h3 class="card-choice__title">Міні навантажувач</h3>
+									<p class="card-choice__text">Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.</p>
+									<div class="card-choice__info">
+										<div class="card-choice__time">від 2 годин</div>
+										<div class="card-choice__price">950 грн / год</div>
+										<div class="card-choice__add">+1000 грн подача</div>
+									</div>
+									<div class="card-choice__buttons">
+										<a href="tel:0961113308" class="card-choice__btn btn btn-orange">
+											<img src="@img/icon/phone-2.svg" alt="phone">
+											<span>Замовити</span>	
+										</a>
+										<a href="#" data-goto-top="78" data-goto=".order" class="card-choice__btn btn btn-black">Залишити заявку</a>
+									</div>
+								</div>
+							</article>
+							<article class="card-choice">
+								<div class="card-choice__image-ibg">
+									<img src="@img/card/2.jpg" alt="image">
+								</div>
+								<div class="card-choice__content">
+									<h3 class="card-choice__title">Маніпулятор</h3>
+									<p class="card-choice__text">Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.</p>
+									<div class="card-choice__info">
+										<div class="card-choice__time">від 3 годин</div>
+										<div class="card-choice__price">800 грн / год</div>
+										<div class="card-choice__add">+800 грн подача</div>
+									</div>
+									<div class="card-choice__buttons">
+										<a href="tel:0961113308" class="card-choice__btn btn btn-orange">
+											<img src="@img/icon/phone-2.svg" alt="phone">
+											<span>Замовити</span>	
+										</a>
+										<a href="#" data-goto-top="78" data-goto=".order" class="card-choice__btn btn btn-black">Залишити заявку</a>
+									</div>
+								</div>
+							</article>
+							<article class="card-choice">
+								<div class="card-choice__image-ibg">
+									<img src="@img/card/3.jpg" alt="image">
+								</div>
+								<div class="card-choice__content">
+									<h3 class="card-choice__title">Міні екскаватор</h3>
+									<p class="card-choice__text">Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.</p>
+									<div class="card-choice__info">
+										<div class="card-choice__time">від 3 годин</div>
+										<div class="card-choice__price">900 грн / год</div>
+										<div class="card-choice__add">+900 грн подача</div>
+									</div>
+									<div class="card-choice__buttons">
+										<a href="tel:0961113308" class="card-choice__btn btn btn-orange">
+											<img src="@img/icon/phone-2.svg" alt="phone">
+											<span>Замовити</span>	
+										</a>
+										<a href="#" data-goto-top="78" data-goto=".order" class="card-choice__btn btn btn-black">Залишити заявку</a>
+									</div>
+								</div>
+							</article>
+							<article class="card-choice">
+								<div class="card-choice__image-ibg">
+									<img src="@img/card/4.jpg" alt="image">
+								</div>
+								<div class="card-choice__content">
+									<h3 class="card-choice__title">Евакуатор</h3>
+									<p class="card-choice__text">Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.</p>
+									<div class="card-choice__info">
+										<div class="card-choice__time">+30 грн за км</div>
+										<div class="card-choice__price">2100 грн</div>
+										<div class="card-choice__add">безкоштовна подача</div>
+									</div>
+									<div class="card-choice__buttons">
+										<a href="tel:0961113308" class="card-choice__btn btn btn-orange">
+											<img src="@img/icon/phone-2.svg" alt="phone">
+											<span>Замовити</span>	
+										</a>
+										<a href="#" data-goto-top="78" data-goto=".order" class="card-choice__btn btn btn-black">Залишити заявку</a>
+									</div>
+								</div>
+							</article>
+							<article class="card-choice">
+								<div class="card-choice__image-ibg">
+									<img src="@img/card/5.jpg" alt="image">
+								</div>
+								<div class="card-choice__content">
+									<h3 class="card-choice__title">Атовишка</h3>
+									<p class="card-choice__text">Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.</p>
+									<div class="card-choice__info">
+										<div class="card-choice__time">від 3 годин</div>
+										<div class="card-choice__price">600 грн / год</div>
+										<div class="card-choice__add">безкоштовна подача</div>
+									</div>
+									<div class="card-choice__buttons">
+										<a href="tel:0961113308" class="card-choice__btn btn btn-orange">
+											<img src="@img/icon/phone-2.svg" alt="phone">
+											<span>Замовити</span>	
+										</a>
+										<a href="#" data-goto-top="78" data-goto=".order" class="card-choice__btn btn btn-black">Залишити заявку</a>
+									</div>
+								</div>
+							</article>
+							<article class="card-choice">
+								<div class="card-choice__image-ibg">
+									<img src="@img/card/6.jpg" alt="image">
+								</div>
+								<div class="card-choice__content">
+									<h3 class="card-choice__title">Гідробур</h3>
+									<p class="card-choice__text">Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.</p>
+									<div class="card-choice__info">
+										<div class="card-choice__time">від 1 години</div>
+										<div class="card-choice__price">350 грн / год</div>
+										<div class="card-choice__add">безкоштовна подача</div>
+									</div>
+									<div class="card-choice__buttons">
+										<a href="tel:0961113308" class="card-choice__btn btn btn-orange">
+											<img src="@img/icon/phone-2.svg" alt="phone">
+											<span>Замовити</span>	
+										</a>
+										<a href="#" data-goto-top="78" data-goto=".order" class="card-choice__btn btn btn-black">Залишити заявку</a>
+									</div>
+								</div>
+							</article>
+							<article class="card-choice">
+								<div class="card-choice__image-ibg">
+									<img src="@img/card/7.jpg" alt="image">
+								</div>
+								<div class="card-choice__content">
+									<h3 class="card-choice__title">Гідромолот</h3>
+									<p class="card-choice__text">Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.</p>
+									<div class="card-choice__info">
+										<div class="card-choice__time">від 1 години</div>
+										<div class="card-choice__price">350 грн / год</div>
+										<div class="card-choice__add">безкоштовна подача</div>
+									</div>
+									<div class="card-choice__buttons">
+										<a href="tel:0961113308" class="card-choice__btn btn btn-orange">
+											<img src="@img/icon/phone-2.svg" alt="phone">
+											<span>Замовити</span>	
+										</a>
+										<a href="#" data-goto-top="78" data-goto=".order" class="card-choice__btn btn btn-black">Залишити заявку</a>
+									</div>
+								</div>
+							</article>
+							<article class="card-choice">
+								<div class="card-choice__image-ibg">
+									<img src="@img/card/9.jpg" alt="image">
+								</div>
+								<div class="card-choice__content">
+									<h3 class="card-choice__title">Самосвал 5т</h3>
+									<p class="card-choice__text">Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.</p>
+									<div class="card-choice__info">
+										<div class="card-choice__time">від</div>
+										<div class="card-choice__price">1500 грн / ходка</div>
+										<div class="card-choice__add">безкоштовна подача</div>
+									</div>
+									<div class="card-choice__buttons">
+										<a href="tel:0961113308" class="card-choice__btn btn btn-orange">
+											<img src="@img/icon/phone-2.svg" alt="phone">
+											<span>Замовити</span>	
+										</a>
+										<a href="#" data-goto-top="78" data-goto=".order" class="card-choice__btn btn btn-black">Залишити заявку</a>
+									</div>
+								</div>
+							</article>
+							<article class="card-choice">
+								<div class="card-choice__image-ibg">
+									<img src="@img/card/10_1.jpg" alt="image">
+								</div>
+								<div class="card-choice__content">
+									<h3 class="card-choice__title">Бус</h3>
+									<p class="card-choice__text">Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.</p>
+									<div class="card-choice__info">
+										<div class="card-choice__time">від 2 годин</div>
+										<div class="card-choice__price">300 грн / год</div>
+										<div class="card-choice__add">безкоштовна подача</div>
+									</div>
+									<div class="card-choice__buttons">
+										<a href="tel:0961113308" class="card-choice__btn btn btn-orange">
+											<img src="@img/icon/phone-2.svg" alt="phone">
+											<span>Замовити</span>	
+										</a>
+										<a href="#" data-goto-top="78" data-goto=".order" class="card-choice__btn btn btn-black">Залишити заявку</a>
+									</div>
+								</div>
+							</article>
+							<article class="card-choice">
+								<div class="card-choice__image-ibg">
+									<img src="@img/card/11.jpg" alt="image">
+								</div>
+								<div class="card-choice__content">
+									<h3 class="card-choice__title">Роторний культиватор</h3>
+									<p class="card-choice__text">Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.</p>
+									<div class="card-choice__info">
+										<div class="card-choice__time">від 1 години</div>
+										<div class="card-choice__price">1000 грн / год</div>
+										<div class="card-choice__add">безкоштовна подача</div>
+									</div>
+									<div class="card-choice__buttons">
+										<a href="tel:0961113308" class="card-choice__btn btn btn-orange">
+											<img src="@img/icon/phone-2.svg" alt="phone">
+											<span>Замовити</span>	
+										</a>
+										<a href="#" data-goto-top="78" data-goto=".order" class="card-choice__btn btn btn-black">Залишити заявку</a>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+				</section>
+				<section class="requisition">
+					<div class="requisition__container">
+						<div class="requisition__info">
+							<h2 class="requisition__title">Залишай заявку та бронюй необхідну техніку вже сьогодні!</h2>
+							<p class="requisition__text">Вигідні умови оренди спецтехніки у Кривому Розі. Вартість оренди одна з найкращих на ринку спецтехніки. Заповніть форму зворотного зв'язку і ми вам передзвонимо.</p>
+						</div>
+						<div class="requisition__block">	
+							<form action="files/telegram.php" method="POST" class="requisition__form">
+								<input type="text" name="name" data-error="Error" placeholder="Ваше ім'я" class="requisition__input">
+								<input type="text" name="phone" data-error="Error" placeholder="Ваш телефон*" class="requisition__input">
+								<button type="submit" class="requisition__btn btn btn-orange">Залишити заявку</button>
+							</form>
+							<div class="requisition__image-ibg">
+								<img src="@img/2.png" alt="image">
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="about">
+					<div class="about__container">
+						<div class="about__image-ibg">
+							<img src="@img/3.png" alt="image">
+						</div>
+						<div class="about__info">
+							<h2 class="about__title title">Про нас</h2>
+							<div class="about__content">
+								<p class="about__text">Забезпечуємо підтримку українського населення щодо аренди спеціалізованної техніки вже <span>понад 10 років</span>! Маємо відмінну репутацію і одні з найкомфортніших умов співпраці у регіоні.</p>
+								<p class="about__text">Сьогодні без спец. техніки не обходиться жодне будівництво. Маючи великий досвід і значний автопарк, можемо забезпечити вас необхідною технікою практично повністю.</p>
+								<p class="about__text">Професійна консультація, підбір та підготовка машини, доставка до об'єкту, швидке та ефективне виконання робіт – ми цінуємо свою репутацію і надаємо тільки якісні послуги.</p>
+								<p class="about__text">Звертайтеся і ми точно станемо вашим найдійним парнером!</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="why">
+					<div class="why__container">
+						<h2 class="why__title title">Чому ми?</h2>
+						<div class="why__content">
+							<article class="card-why">
+								<h3 class="card-why__title">Великий автопарк</h3>
+								<div class="card-why__text">Маємо значний автопарк техніки, тому зможемо закрити вашу потребу майже по будь-якому проекту.</div>
+							</article>
+							<article class="card-why">
+								<h3 class="card-why__title">Вчасна доставка</h3>
+								<div class="card-why__text">Оперативно реагуємо на вашу заявку і вчасно подамо техніку до об'єкту.</div>
+							</article>
+							<article class="card-why">
+								<h3 class="card-why__title">Мінімальні ціни</h3>
+								<div class="card-why__text">Маючи великий досвід у сфері, ми можемо запропонувати найвигідніші умови аренди.</div>
+							</article>
+							<article class="card-why">
+								<h3 class="card-why__title">Зручна оплата</h3>
+								<div class="card-why__text">Зможемо розрахуватись зручним для вас способом: безготівково, або готівкою вже на об'єкті.</div>
+							</article>
+							<article class="card-why">
+								<h3 class="card-why__title">Від 2-х годин</h3>
+								<div class="card-why__text">Маємо досить гнучкі умови аренди, від 2-х годин до практично необмеженого часу.</div>
+							</article>
+							<article class="card-why">
+								<h3 class="card-why__title">Знижки</h3>
+								<div class="card-why__text">Для постійних клієнтів, аренди більше ніж однієї одиниці техніки чи на довгий період зможемо запропонувати більш лояльні умови.</div>
+							</article>
+							<article class="card-why">
+								<h3 class="card-why__title">Зручні умови</h3>
+								<div class="card-why__text">Можемо обговорити індивідуальні умови для особливих випадків – просто зверніться для обговорення.</div>
+							</article>
+							<article class="card-why">
+								<h3 class="card-why__title">Працюємо 24/7</h3>
+								<div class="card-why__text">На зв'язку практично завжди, а наша техніка може виконувати свої функції практично безперервно.</div>
+							</article>
+						</div>
+					</div>
+				</section>
+				<section class="contacts">
+					<div class="contacts__container">
+						<div class="contacts__info">
+							<h2 class="contacts__title title">Контакти</h2>
+							<div class="contacts__text">Щоб взяти на прокат спецтехніку, зателефонуйте за номером <a href="tel:0961113308" class="contacts__tel">096 111 33 08</a>  або залиште заявку у формі нижче. Зазвичай ми телефонуємо протягом 15 хвилин після подачі заявки.</div>
+						</div>
+						<div class="contacts__image-ibg">
+							<img src="@img/7.png" alt="image">
+						</div>
+					</div>
+				</section>
+				<section class="social">
+					<div class="social__container">
+						<div class="social__info">
+							<h2 class="social__title title">Ми у соцмережах</h2>
+							<div class="social__text">Підписуйтесь на наш Instagram, YouTube або TikTok, щоб не пропустити свіжі новини компанії, вигідні пропозиції та багато іншої цікавої і корисної інформації.</div>
+							<div class="social__items">
+								<a href="https://www.instagram.com/tehnika_bossa/" target="_blank"  class="social__item">
+									<img src="@img/icon/instagram.svg" alt="instagram">
+								</a>
+								<a href="https://www.youtube.com/@user-mv9cl9ro9k" target="_blank" class="social__item">
+									<img src="@img/icon/youtube.svg" alt="youtube">
+								</a>
+								<a href="https://www.tiktok.com/@bossspetstekhniki" target="_blank" class="social__item">
+									<img src="@img/icon/tiktok.svg" alt="tiktok">
+								</a>
+							</div>
+						</div>
+						<div class="social__image">
+							<div class="social__img-ibg">
+								<img src="@img/5.png" alt="social">
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="order">
+					<div class="order__container">
+						<div class="order__info">
+							<h2 class="order__title title">Забронювати за 15 хвилин</h2>
+							<p class="order__text">Залиште заявку із описом вашої задачі у довільній формі – <span>протягом 15 хвилин</span> ми передзвонимо вам, узгодимо деталі та підтвердимо бронювання на потрібні дати і час</p>
+							<form action="files/telegram.php" method="POST" class="order__form">
+								<input type="text" name="name" data-error="Error" placeholder="ім'я" class="requisition__input">
+								<input type="text" name="phone" data-error="Error" placeholder="Телефон*" class="requisition__input">
+								<textarea name="message" id="formMessage" placeholder="Запиши коментар" class="requisition__input"></textarea>
+								<button type="submit" class="order__btn btn btn-orange">Замовити</button>
+							</form>
+						</div>
+						<div class="order__image-ibg">
+							<img src="@img/6.png" alt="image">
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
 		</div>
+		@@include('html/_js.htm',{})
 	</body>
-	<style>
-		@charset "UTF-8";
-		@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
-		* ,*::before, *::after {
-			padding: 0px;
-			margin: 0px;
-			border: 0px;
-			box-sizing: border-box; 
-		}
-		html, body {
-			height: 100%;
-			margin: 0;
-			padding: 0;
-			min-width: 320px;
-			width: 100%;
-			color: #fff;
-			background-color: #5e5373;
-		}
-		body {
-			font-family: Montserrat;
-			font-size: 100%;
-			line-height: 1;
-			font-size: 1rem;
-		}
-		a {
-			text-decoration: underline;
-			color: #ebe691
-		}
-		a:visited {
-			text-decoration: underline;
-			color: #aaa768;
-		}
-			a:hover {
-			text-decoration: none;
-		}
-		ul li {
-			list-style: none;
-		}
-		img {
-			vertical-align: top;
-		}
-		.wrapper {
-			width: 100%;
-			min-height: 100%;
-			overflow: hidden;
-		}
-		.rootpage{
-			padding: 30px;
-			display: flex;
-			flex-direction: column;
-			align-items: flex-start;
-		}
-		@media (max-width: 767px) {
-			.rootpage{
-				padding:30px 15px;
-			}
-		}
-		h1 {
-			color: #ebe691;
-			font-size: 2.5rem;
-			margin: 0px 0px 1.25rem 0px;
-		}
-		@media (max-width: 767px) {
-			h1 {
-				font-size: 1.85rem;
-				margin: 0px 0px 1.25rem 0px;
-			}
-		}
-		h2 {
-			color: #ebe691;
-			font-size: 1.25rem;
-			margin: 0px 0px 1rem 0px;
-		}
-		@media (max-width: 767px) {
-			 h2 {
-				font-size: 1.125rem;
-				margin: 0px 0px 1rem 0px;
-			}
-		}
-		.rootpage__info{
-			line-height: 140%;
-			margin: 0px 0px 1.5rem 0px;
-		}
-
-		.rootpage__list{
-			margin: 0px 0px 2.25rem 1.25rem;
-		}
-		.rootpage__list li:not(:last-child){
-			margin: 0px 0px 15px 0px;
-		}
-		.rootpage__contacts,
-		.rootpage__tnx{
-			border-radius: 200px;
-			padding: 20px 65px;
-			line-height: 140%;
-		}
-		@media (max-width: 767px){
-		.rootpage__contacts,
-		.rootpage__tnx{
-			border-radius:40px;
-			padding: 20px;
-		}
-		}
-		.rootpage__contacts{
-			background: #32b5a4;
-			
-		}
-		.rootpage__contacts a{
-			color: #ebe691;
-		}
-		.rootpage__tnx{
-			background: #c22d63;
-			margin: 0px 0px 1rem 0px;
-		}
-	</style>
 </html>

@@ -1,22 +1,25 @@
 <header data-scroll="50" class="header">
 	<div class="header__container">
-		<a href="#" class="header__logo">
+		<a href="index.html" class="header__logo">
 			<img src="@img/logo.png" alt="logo">
 		</a>
 		<div class="header__menu menu">
 			<nav class="menu__body">
 				<ul class="menu__list">
-					<li class="menu__item"><a href="#" class="menu__link">Про нас</a></li>
+					<li class="menu__item"><a href="index.html" data-goto-top="78" data-goto=".about" class="menu__link">Про нас</a></li>
 				</ul>
 				<ul class="menu__list">
-					<li class="menu__item"><a href="#" class="menu__link">Вибір техніки</a></li>
+					<li class="menu__item"><a href="index.html" data-goto-top="78" data-goto=".choice"  class="menu__link">Вибір техніки</a></li>
 				</ul>
 				<ul class="menu__list">
-					<li class="menu__item"><a href="#" class="menu__link">Контакти</a></li>
+					<li class="menu__item"><a href="index.html" data-goto-top="78" data-goto=".contacts"  class="menu__link">Контакти</a></li>
 				</ul>
 			</nav>
 		</div>
-		<button data-da=".menu,991.98" type="button" class="menu__btn btn btn-orange">Замовити техніку</button>
+		<a href="tel:0961113308" data-da=".menu,991.98" type="button" class="menu__btn btn btn-orange">
+			<img src="@img/icon/phone-2.svg" alt="phone">
+			<span>Замовити</span>	
+		</a>
 		<button type="button" class="menu__icon icon-menu"><span></span></button>
 	</div>
 </header>

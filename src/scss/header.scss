@@ -6,8 +6,7 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	@include adaptiveValue("padding-top", 23, 5);
-	@include adaptiveValue("padding-bottom", 23, 5);
+	padding: rem(4) 0;
 	&._header-scroll {
 		box-shadow: 0 0 6px #8f8f8f;
 	}
@@ -24,8 +23,7 @@
 			z-index: 7;
 		}
 		img {
-			@include adaptiveValue("height", 50, 40);
-			
+			height: rem(70);			
 		}
 	}
 	// .header__menu
@@ -74,7 +72,7 @@
 		transition: all .3s ease;
 		@media (any-hover: hover) {
 			&:hover {
-				color: #2222227a;
+				color: $orange;
 			}
 		}
 		@media (max-width:$tablet){
@@ -83,6 +81,11 @@
 	}
 	// .menu__btn
 	&__btn {
+		width: rem(141);
+		img {
+			height: rem(18);
+			width: rem(18);
+		}
 	}
 	// .menu__icon
 	&__icon {
